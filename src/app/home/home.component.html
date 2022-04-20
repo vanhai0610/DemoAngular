@@ -1,0 +1,20 @@
+<p>home works!</p>
+<h1>Hello Word!</h1>
+<h3>Đây là demo home =))</h3>
+
+<input [(ngModel)]="name" type="text"/>
+<br/>
+<button (click)="TangTuoi()">Tăng Tuổi</button>
+<h2>Xin chào bạn {{ name }}</h2>
+<h2>Tuổi của bạn là {{ age }} tuổi</h2>
+
+
+<span *ngIf="age < 18; then condition1; else condition2"></span>
+<ng-template #condition1 class="d18">Bạn chưa đủ tuổi vị thành niên: {{ age }}</ng-template>
+<ng-template #condition2 class="t18">Bạn đã đủ tuổi vị thành niên: {{ age}}</ng-template>
+<br>
+<div *ngFor="let item of students">
+    <ul>
+        <li>{{ item }}</li>
+    </ul>
+</div>
