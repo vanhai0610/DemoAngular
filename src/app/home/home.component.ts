@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +10,18 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   public name = 'hải';
-  public age = 15;
+  public age;
   public students = ['Hải', 'Hùng', 'Nam'];
-  constructor() { }
+  constructor( private _common: CommonService) {
+    this.age = _common.age;
+   }
 
   ngOnInit(): void {
   }
 
   public TangTuoi(){
-    this.age = this.age + 1;
+    this._common.age++;
+    this.age = this._common.age;
     if(this.age === 20){
         this.name = 'Nguyễn Văn Hải';
     };
