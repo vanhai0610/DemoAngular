@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginsComponent } from './logins/logins.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { DemologinComponent } from './demologin/demologin.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     AboutComponent,
     PageNotFoundComponent,
     LoginsComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    DemologinComponent
   ],
   imports: [
     BrowserModule,

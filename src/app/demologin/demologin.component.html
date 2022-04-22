@@ -1,0 +1,19 @@
+<div class="container">
+        <div class="form-group">
+            <form class="row jc-c" [formGroup]="loginForm" (submit)="Login()">
+                <div class="col-ml-6 col-xl-7 div-form">
+                    <label >UserName</label>
+                    <input required="true" class="form-control" type="text" formControlName="username" id="Username" placeholder="Nhập tài khoản...">
+                    <!-- <span class="error-mes">*UserName không được để trống.</span> -->
+                </div>
+                <div class="col-ml-6 col-xl-7 div-form">
+                    <label >Password</label>
+                    <input required="true" class="form-control" type="password" formControlName="password" id="Password" placeholder="Nhập mật khẩu...">
+                    <!-- <span class="error-mes">*Password không được để trống.</span> -->
+                </div>
+                <div class="col-ml-6 col-xl-7 div-form" style="text-align: center;">
+                    <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid" >Đăng nhập</button>
+                </div>
+            </form>
+        </div>
+</div>

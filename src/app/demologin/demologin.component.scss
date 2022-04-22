@@ -1,0 +1,23 @@
+.jc-c{
+    justify-content:center;
+    
+}
+.div-form{
+    padding: 5px;
+}
+    .div-form>label{
+        padding: 5px;
+        font-size: 18px;
+    }
+    .div-form>input{
+        padding: 10px 30px;
+        border-radius: 30px;
+    }
+
+.error-mes{
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+    padding: 5px;
+    display: none;
+}
